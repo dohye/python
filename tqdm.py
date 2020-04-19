@@ -1,3 +1,6 @@
+"""
+https://github.com/tqdm/tqdm
+"""
 
 from tqdm import tqdm
 import pandas as pd
@@ -15,5 +18,4 @@ for i in tqdm(range(1000000), desc = "progress ... : "):
 df = pd.DataFrame(np.array(a).reshape(1000,1000))
 tqdm.pandas(desc = "progress ... : ")
 df.progress_apply(lambda x: x*10)
-
 
